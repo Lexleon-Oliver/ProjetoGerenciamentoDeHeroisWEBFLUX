@@ -1,0 +1,18 @@
+package com.digitalinnovation;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.socialsignin.spring.data.dynamodb.repository.config.EnableDynamoDBRepositories;
+
+@SpringBootApplication
+@EnableDynamoDBRepositories
+public class ChampionsApiApplication {
+
+  public static void main(String[] args) {
+
+    SpringApplication.run(ChampionsApiApplication.class, args);
+    System.out.println("MCOC with webflux");
+  }
+
+}
+
